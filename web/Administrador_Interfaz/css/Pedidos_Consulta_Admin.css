@@ -1,0 +1,98 @@
+#add-container-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #0078d7;
+  border: 2px solid #0078d7;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#add-container-btn:hover {
+  background-color: #0063ad;
+  border-color: #0063ad;
+}
+
+#add-container-btn:active {
+  background-color: #005293;
+  border-color: #005293;
+  box-shadow: none;
+}
+
+
+.container_AAA,
+.bb-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+}
+
+/* Se establecen colores diferentes para cada contenedor */
+.container_AAA {
+  background-color: #f5b7b1;
+}
+
+.container_AAA:nth-child(even) {
+  background-color: #d7bde2;
+}
+
+.container_AAA:nth-child(3n) {
+  background-color: #a9cce3;
+}
+
+.bb-container {
+  background-color: #a3e4d7;
+}
+
+.bb-container:nth-child(even) {
+  background-color: #f0b27a;
+}
+
+.bb-container:nth-child(3n) {
+  background-color: #85c1e9;
+}
+
+/* Se establecen márgenes para los contenedores */
+.container_AAA {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.bb-container {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* Estilos para los campos del formulario */
+
+/* Se establece el ancho máximo y un estilo de borde para los campos */
+input,
+label {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* Se establece un estilo de borde para la tabla */
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+}
+
+/* Se establecen estilos para las celdas de la tabla */
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}

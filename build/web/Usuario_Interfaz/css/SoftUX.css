@@ -1,0 +1,181 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+    background: #ffd89b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: #485563; 
+  background: -webkit-linear-gradient(to right, #485563, #29323c);
+  background: linear-gradient(to right, #485563, #29323c);
+  color: #fff;
+}
+
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Estilos para el menú de navegación */
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+/* Estilos para el botón de hamburguesa */
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-icon {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.brand img{
+  display: flex;
+  width: 75px;
+  height: 75px;
+}
+
+/* Estilos para la versión responsiva */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .navbar-icon {
+    margin: 0;
+  }
+  
+  .navbar-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .navbar-menu.show li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*/////////////////*/
+header{
+    width: 100%;
+    height: 40%;
+    background: #304352;  /* fallback for old browsers */
+    background: url(../Imagenes/ciudad.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+}
+
+header .textos-header img{
+  width: 80px;
+  height: 80px;
+}
+
+/*////////////////*/
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color:white;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contenedor-sobre-nosostros{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    background-color: white;   
+}
+
+
+.menu-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bar li {
+  margin: 0 20px;
+}
+
+.menu-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-bar img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+}

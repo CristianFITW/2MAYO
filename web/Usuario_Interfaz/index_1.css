@@ -1,0 +1,267 @@
+html, body {
+  height: 100%;
+  background-color: #000000;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+nav {
+  background-color: #fff;
+  height: 140px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.logo img {
+  height: 130px;
+  justify-content: left;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a:hover {
+    color: #cc0033;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #007aff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sub-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sub-menu ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ul li a{
+    color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  margin-right: 10px;
+}
+
+.logo{
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+  font-size: large;
+  font-weight: bold;
+}
+
+.menu-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bar li {
+  margin: 0 20px;
+}
+
+.menu-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-bar img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+/*Botones*/
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 33.33vh;
+}
+
+.button-box {
+  width: calc(33.33% - 20px);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #45b6fe; /* ajusta el ancho del borde para que coincida con el ancho del botón */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #45b6fe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  text-decoration: none; /* agrega esta propiedad para eliminar el subrayado del texto */
+  text-align: center; /* agrega esta propiedad para centrar el texto */
+}
+
+
+
+.button:hover {
+  background-color: #2196f3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4), 0 0 20px #f00, 0 0 30px #0f0, 0 0 40px #00f, 0 0 50px #ff0, 0 0 60px #0ff; 
+}
+
+.button:hover::before { 
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-wrap: wrap;
+  }
+  
+  .button-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}

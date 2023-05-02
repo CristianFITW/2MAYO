@@ -1,0 +1,245 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #000;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+nav {
+    background-color: #ffffff;
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+}
+
+.menu a:hover {
+  color: #007aff;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #007aff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sub-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sub-menu ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ul li a{
+    color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  margin-right: 10px;
+}
+
+.logo{
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: cursive;
+  font-size: large;
+  font-weight: bold;
+}
+
+.menu-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bar li {
+  margin: 0 20px;
+}
+
+.menu-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-bar img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu .item:hover .tooltip {
+opacity: 1;
+transition-delay: 2s; 
+}
+
+.menu li:hover > .sub-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.menu .sub-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.tooltip {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: 100px;
+  text-align: center;
+}
+
+.item .tooltip {
+  max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+  white-space: normal;
+}
+.item .tooltip {
+  z-index: 9999;
+}
+
+.menu .item:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+  transition-delay: 1s;
+}
